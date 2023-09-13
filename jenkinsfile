@@ -14,10 +14,10 @@ pipeline {
                 def packageJSONVersion = packageJSON.version
                 sh "echo '${packageJSONVersion}'"
 
-
                 echo "Building..."
                 sh 'cd webapp && npm install && npm run build'
- }
+                }
+           }
         }
         stage('Deploy') {
             steps {
