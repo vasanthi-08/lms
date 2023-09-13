@@ -19,7 +19,7 @@ pipeline {
                   
                 echo "Releasing..."  
                 sh "zip webapp/dist-'${packageJSONVersion}'.zip -r webapp/dist"
-                sh "curl -v -u admin:Admin123* --upload-file webapp/dist-'${packageJSONVersion}'.zip http://34.203.75.235:8081/repository/lms/"  
+                sh "curl -v -u admin:nexus* --upload-file webapp/dist-'${packageJSONVersion}'.zip http://34.203.75.235:8081/repository/lms/"  
 
                 }
            }
