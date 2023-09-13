@@ -1,7 +1,7 @@
 {
   "name": "webapp",
   "private": true,
-  "version"; "3.1",
+  "version": "3.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -64,4 +64,4 @@
   "msw": {
     "workerDirectory": "public"
   }
-}
+
